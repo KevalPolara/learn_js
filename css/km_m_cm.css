@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+body{
+    margin-top: 8rem;
+   background-color:palegoldenrod;
+   background: url(../images/images.jpeg);
+}
+
+.data{
+    background-color: #f0f0f0;
+    width: 30%;
+    margin: 0 auto;  
+}
+
+h2{
+    background-color: #b64b39;
+    margin-bottom: 2.0rem;
+    font-size: 2.0rem;
+}
+
+.valuetwo{
+    display: inline-block;
+    font-size: 2.0rem; 
+    margin-bottom: 3.0rem;
+    margin-top: 2.0rem;
+
+}
+
+.button{
+    background-color: #b64b39;
+    outline: none;
+    border: none;
+    color:white;
+    font-size:1.5rem;
+}
+
+input{
+    width: 78%;
+    padding: 1.5rem;
+    margin-top: 2.0rem;
+}
+
+select{
+    margin-top: 2.0rem;
+    width: 78%;
+    padding: 1.5rem;
+}
+
+#valueone{
+    font-size: 2.0rem;
+}
+
+
+

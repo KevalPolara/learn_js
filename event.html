@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <!-- mouse event -->
+    <input type="text" id="value" onmousedown="return handeledown()" placeholder="mousedown">
+    <br><br>
+
+    <input type="text" id="value" onmouseout="handlemouseout()" placeholder="mouseout">
+    <br><br>
+
+    <input type="text" id="valuetwo" onmouseover="handlemouseover()" placeholder="mouseover">
+    <br><br>
+
+    <input type="text" id="valuethree" onmouseup="handlemouseup()" placeholder="mouseup">
+    <br><br>
+
+    <input type="text" id="valuefour" onmousemove="handlemousemove()" placeholder="mousemove">
+    <br><br>
+
+    <!-- keyboardevent -->
+
+    <input type="text" id="valuefive" onkeydown="handlekeyboardown()" placeholder="keydown">
+    <br><br>
+
+    <input type="text" id="valuefive" onkeyup="handlekeyboardown()" placeholder="keyup">
+    <br><br>
+
+    <!-- formevent -->
+    <input type="text" id="valuesix" onfocus="handlefocus()" onblur="hanldeblur()" placeholder="focus">
+    <br><br>
+
+    <select name="" id="change" onchange="handlechange()">
+        <option value="ca">ca</option>
+        <option value="in">in</option>
+        <option value="aus">aus</option>
+    </select>
+
+
+
+
+    <script src="js/event.js"></script>
+</body>
+</html>

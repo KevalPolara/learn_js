@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/interest.css">
+</head>
+<body>
+    <div class="container">
+    <div class="demo">
+    <h1>Calulator of <br>Simple Inetest:-</h1>
+    <br>
+    <form action="" onsubmit="return simplecalculator()">
+    <input type="text" name="principal" id="principal" placeholder="Enter Your Principal Amount">
+    <br><br>
+
+    <input type="text" name="rate" id="rate" placeholder="Enter Your Rate of Interest">
+    <br><br>
+
+    <select name="term system" id="year_month">
+        <option value="0">--Select monthly or yearly system-- </option>
+        <option value="monthly">monthly</option>
+        <option value="yearly">yearly</option>
+    </select>
+    <br><br>
+
+    <input type="text" name="m_y" id="m_y" placeholder="Enter your Month or year">
+    <br><br>
+
+    <input type="submit" value="Submit" class="button">
+    <br><br>
+    <label for="">Your Simple interest is:</label>
+    <p id="result"></p>
+
+    <script src="js/interest.js"></script>
+</form>
+</div>
+</div>
+</body>
+</html>

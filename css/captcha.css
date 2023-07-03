@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+
+body{
+    margin-top: 20rem;
+    background: url(../images/images.png);
+
+    background-position: center center;
+    background-color: aqua;
+}
+
+.data{
+    width: 30%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    padding: 2.0rem;
+    background-color: #e9e7d4;
+}
+
+input{
+    padding: 1.0rem;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 2.0rem;
+}
+
+#sub{
+    margin-top: 2.0rem;
+    width: 50%;
+    background-color: #888888;
+    border: none;
+    outline: none;
+}
+
+span{
+    color: blue;
+}
+
+p{
+    
+}
