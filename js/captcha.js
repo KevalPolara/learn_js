@@ -18,7 +18,7 @@ function handlealert(){
    }else{
      alert("Your Answer is Wrong");
    }
-}
+} 
 
 
 
