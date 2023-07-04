@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+    width: 30%;
+    text-align: center;
+    border: 2px solid black;
+    /* margin-top: 5.0rem; */
+    margin-left: 22.0rem;
+    background-color: chocolate;
+}
+
+input{
+    width: 70%;
+    padding: 1.0rem;
+}
+
+select{
+    width: 70%;
+    padding: 1.0rem;
+}
+
+#button{
+    background-color: burlywood;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+body{
+    background: url(../images/Employee-Bonus-or-Incentive-Schemes.jpg);
+}
