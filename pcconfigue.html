@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" onsubmit="return handlesubmit()">
+        <span>Processor:-</span>
+        <input type="radio" name="pro" value="7000">i3
+        <input type="radio" name="pro" value="12000">i5
+        <input type="radio" name="pro" value="18000">i7
+
+        <br><br>
+
+        <span>Ram:-</span>
+        <input type="radio" name="ram" value="3000">4GB
+        <input type="radio" name="ram" value="6000">8GB
+        <input type="radio" name="ram" value="9000">1TB
+
+        <br><br>
+
+        <span>Memory:-</span>
+        <input type="radio" name="memo" value="2500">256GB
+        <input type="radio" name="memo" value="5000">512GB
+        <input type="radio" name="memo" value="10000">1TB
+
+        <br><br>
+
+        <input type="radio" name="grap" value="4500">Yes
+        <input type="radio" name="grap" value="0">No
+
+        <br><br>
+
+        <input type="submit" value="calculate cost">
+        <br><br>
+        <span>Cost :</span>
+        <span id="cost"></span>
+        <br><br>
+
+        <span>Type:</span>
+        <span id="type"></span>
+
+
+        
+    </form>
+
+
+
+    <script src="js/pcconfigue.js"></script>
+    
+</body>
+</html>
