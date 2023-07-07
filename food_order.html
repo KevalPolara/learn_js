@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="return handlesubmit()">
+
+        <h1>Food Order:-</h1>
+
+        <span>Product:-</span>
+        <input type="radio" name="comb" value="80">Burger
+        <input type="radio" name="comb" value="210">Pizza
+        <input type="radio" name="comb" value="160">Sandwich
+        <input type="radio" name="comb" value="320">Combo
+        <br><br>
+
+
+        <span>Fries:-</span>
+        <input type="radio" name="fri" value="100">Yes
+        <input type="radio" name="fri" value="0">No
+        <br><br>
+
+        <select name="" id="fries">
+            <option value="0">--Select Number--</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <br><br>
+
+        <span>Coldrinks:-</span>
+        <input type="radio" name="cold" value="1">Yes
+        <input type="radio" name="cold" value="0">No
+        <br><br>
+
+        <span>Select:-</span>
+        <input type="radio" name="ptc" value="50">Pepsi
+        <input type="radio" name="ptc" value="80">Thick Shake
+        <input type="radio" name="ptc" value="70">Cold Coco
+        <br><br>
+
+        <select name="" id="colddrink">
+            <option value="0">--Select Number--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <br><br>
+
+        <span>Coupon Code:-</span>
+        <input type="text" id="coupon">
+        <br><br>
+
+        <input type="submit" value="Order Food">
+
+        <h2>Your Bill is :-</h2>
+
+        <span>Food:-</span>
+        <span id="ans"></span>
+        <br><br>
+
+        <span>Fries:-</span>
+        <span id="ans1"></span>
+        <br><br>
+
+        <span>Colddrinks:-</span>
+        <span id="ans2"> </span>
+        <br><br>
+        
+        <span>Total Bill is :-</span>
+        <span id="ans3"></span>
+        <br><br>
+
+        <span>Discount:-</span>
+        <span id="ans4"></span>
+        <br><br>
+
+        <span>Your Final Bill is :-</span>
+        <span id="ans5"></span>
+
+
+
+
+
+    </form>
+    
+
+
+    <script src="js/food_order.js"></script>
+</body>
+</html>
