@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+    text-align: center;
+    width: 50%;
+    border: 2px solid black;
+    margin-left: 25%;
+    padding: 2.0rem;
+    background-color: burlywood;
+}
+
+h1{
+    margin-bottom: 2.0rem;
+}
+
+h2{
+    margin-bottom: 1.0rem;
+}
+
+select{
+    width: 40%;
+    margin-bottom: 1.0rem;
+}
+
+#button{
+    padding: 0.5rem 3.0rem;
+    background-color: rebeccapurple;
+    border: none;
+    margin-bottom: 2.0rem;
+}
+
+
+input{
+    margin-bottom: 1.0rem;
+    /* margin-right: 1.0rem; */
+}

@@ -2,12 +2,9 @@ let x=Math.floor(Math.random()*10);
 let z=Math.floor(Math.random()*10);
 
 let ans=x+z;
-// console.log(ans);
 
 document.getElementById("n1").innerHTML=x;
 document.getElementById("n2").innerHTML=z;
-
-
 
 function handlealert(){
 

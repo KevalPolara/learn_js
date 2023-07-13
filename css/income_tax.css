@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table{
+    margin: 0 auto;
+}
+
+form{
+    margin-top: 2.0rem;
+    margin-bottom: 2.0rem;
+}
+
+.div{
+    margin-top: 6.0rem;
+    margin-left: 30%;
+    text-align: center;
+    border: 2px solid black;
+    width: 40%;
+    background-color: darkseagreen;
+    padding-bottom: 2.0rem;
+}
+
+h2{
+    margin-bottom: 1.0rem;
+}
+
+#submit{
+    padding: 0 1.0rem;
+    background-color: rgb(255, 0, 119);
+    border: none;
+    color: wheat;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/income_tax.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div">
+    <form action=""onsubmit="return handleincome()">   
+    <h2>Income Tax Counting System:-</h2>
+    <span>Enter Your Income:-</span>
+    <input type="text" id="income" placeholder="Enter Your Income">
+    <input type="submit" value="Submit" id="submit">
+    </form>
+
+    <table border="1" style="border-color: blue;">
+        <tr>
+            <th>Income Tax Slab</th>
+            <th>Income Tax Rate</th>
+            <th>Payable Tax</th>
+        </tr>
+
+        <tr>
+            <th>Up to 3 Lakh</th>
+            <td>Nil</td>
+            <td id="slab1"></td>
+        </tr>
+
+        <tr>
+            <th>3 lakh  - 6 lakh</th>
+            <td>5%</td>
+            <td id="slab2"></td>
+        </tr>
+
+        <tr>
+            <th>6 lakh - 9 lakh</th>
+            <td>10%</td>
+            <td id="slab3"></td>
+        </tr>
+
+        <tr>
+            <th>9 lakh-12 lakh</th>
+            <td>15%</td>
+            <td id="slab4"></td>
+        </tr>
+
+       <tr>
+            <th>12 lakh-15 lakh</th>
+            <td>20%</td>
+            <td id="slab5"></td>
+       </tr>
+
+       <tr>
+            <th>Above 15 lakh</th>
+            <td>30%</td>
+            <td id="slab6"></td>
+       </tr>
+
+       <tr>
+            <th>Total Payable Tax</th>
+            <td></td>
+            <td id="total-tax"></td>
+       </tr>
+    </table>
+</div>
+
+    <script src="js/income_tax.js"></script>
+</body>
+</html>
