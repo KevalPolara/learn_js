@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%
+}
+
+.todolist{
+    position: absolute;
+    top: 20rem;
+    left: 40rem;
+    border: 1px solid black;
+    padding: 2.0rem;
+    background-color: burlywood;
+}
+
+button{
+    margin-left: 0.5rem;
+    width: 30%;
+    outline: none;
+    /* padding: 0.5rem 0;  */
+}
+
+li{
+    font-size: 1.8rem;
+    margin-bottom: 1.0rem;
+}
+
+h2{
+    margin-bottom: 1.0rem;
+}
+
+body{
+    position: relative;
+}
+
+
+
