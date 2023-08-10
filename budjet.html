@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/budjet.css">
+
+    
+
+</head>
+
+<body>
+
+    <h3>Budget Application:-</h3>
+
+    <div class="row">
+        <div class="col-5">
+            <form action="" id="button" >
+                <p>Please Enter Your Budget</p>
+                <input type="text" id="bud">
+                <span id="error"></span>
+                <button type="submit" class="btn btn-outline-primary">Calculate</button>
+            </form>
+        </div>
+
+        <div class="col-7">
+            <div class="row">
+                <div class="col-4">
+                    <p> BUDGET</p>
+                    <i class="fa-solid fa-money-bill"></i>
+                    <span>$</span>
+                    <span id="zero">0</span>
+
+                </div>
+                <div class="col-4">
+                    <p>EXPENSES</p> 
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>$</span>
+                    <span id="one">0</span>
+                    </div>
+                <div class="col-4">
+                    <p>BALANCE</p>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>$</span>
+                    <span id="two">0</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row demo">
+        <div class="col-5">
+            <form action="" id="buton">
+                <p class="budeget">Please Enter Your Expenses</p>
+                <input type="text" id="expenses">
+                <span id="error1"></span>
+                <p class="">Please Enter Your Amount</p>
+                <input type="text" id="amount">
+                <span id="error2"></span>
+
+                <button type="submit" class="btn btn-outline-primary">Add Expenses</button>
+            </form>
+        </div>
+
+        <div class="col-6">
+            <div id="parentclass">
+                <div class="d-flex justify-content-between">
+                    <h5>Expense Title</h5>
+                    <h5>Expense Value</h5>
+                    <h5>Action</h5>
+                </div>
+
+                
+            </div>
+
+        </div>
+    </div>
+
+
+  <script src="js/budget.js"></script>
+   
+
+</body>
+
+</html>

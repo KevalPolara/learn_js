@@ -1,10 +1,10 @@
 let treatment;
+let cost;
+let seat;
+let arr = [];
 const handledisplay = () => {
   treatment = document.getElementById("treatment").value;
   // console.log(treatment);
-
-  let cost;
-  let seat;
 
   if (treatment === "teeth_cleaning") {
     cost = 500;
@@ -33,61 +33,79 @@ const handledisplay = () => {
   return false;
 };
 
-const handleclick = () => {
-  treatment = document.getElementById("treatment").value;
-  let date=document.getElementById("date").value;
-  let print='';
+const handleremove = (index) => {
+  // console.log(index);
 
-  if (treatment === "teeth_cleaning") {
-    if(date){
-      document.getElementById("fir-date").innerHTML=date;
+  arr.forEach((v, i, arr) => {
+    if (i === index) {
+      arr.splice(i, 1);
     }
-    document.getElementById("treat").style.display="block";
-    print=
-    print+
-    `<table border='1'  >
-    <tr>
-    <td>Teeth Cleaning</td>
-    <td>2</td>
-    <td>500</td>
-    <td id="fir-date"></td>
-    <td >250</td>
-</tr>
-</table>`
-document.getElementById("table").innerHTML=print;
-
-
-
-
-    // document.getElementById("teeth").style.display="block";
-
-  }else if (treatment === "fillings") {
-    if(date){
-      document.getElementById("firone-date").innerHTML=date;
-    }
-    document.getElementById("fill").style.display="block";
-    
-  } else if (treatment === "root canal treatment") {
-    if(date){
-      document.getElementById("firtwo-date").innerHTML=date;
-    }
-    document.getElementById("root").style.display="block";
-    
-     
-  } else if (treatment === "rct_cover") {
-    if(date){
-      document.getElementById("firthree-date").innerHTML=date;
-    }
-    document.getElementById("rct").style.display="block";
-    
-  } else if (treatment === "braces_invisalign") {
-    if(date){
-      document.getElementById("firfour-date").innerHTML=date;
-    }
-    document.getElementById("brace").style.display="block";
-  }
-
+    // console.log(arr);
+    // console.log(i);
+  });
   
+  handledis(date);
+  console.log(arr);
 
   return false;
 };
+
+const handleclick = () => {
+  document.getElementById("treat").style.display = "block";
+  let date = document.getElementById("date").value;
+  // console.log(dateAp);
+  let payable = Math.floor(cost / seat);
+
+  const dental = {
+    treat: treatment,
+    seating: seat,
+    costing: cost,
+    dat: date,
+    pay: payable
+  };
+
+  arr.push(dental);
+  // console.log(arr);
+
+  handledis(date);
+
+  return false;
+};
+
+const handledis = (date) => {
+  let dateAp = new Date(date);
+  console.log(dateAp);
+  let print = "";
+  arr.map((v, i) => {
+    for (let i = 1; i <= v.seating; i++) {
+      print += "<tr>";
+      if (i === 1) {
+        print += "<td>" + v.treat + "</td>";
+        print += "<td>" + i + "</td>";
+        print += "<td>" + v.costing + "</td>";
+        print += "<td>" + dateAp.toLocaleDateString() + "</td>";
+        print += "<td>" + v.pay + "</td>";
+        // console.log(i, per_co, dateAp.toLocaleDateString());
+      } else {
+        dateAp.setDate(dateAp.getDate() + 7);
+        // print += "<tr>";
+        print += "<td>" + v.treat + "</td>";
+        print += "<td>" + i + "</td>";
+        print += "<td>" + v.costing + "</td>";
+        print += "<td>" + dateAp.toLocaleDateString() + "</td>";
+        print += "<td>" + v.pay + "</td>";
+        // console.log(i, per_co, dateAp.toLocaleDateString());
+      }
+    }
+    print += `<td><button onclick=handleremove(${i})>Delete</button></td>`;
+    print += "</tr>";
+  });
+
+  document.getElementById("tbody").innerHTML = print;
+
+  return false;
+};
+
+// let bookRef = document.getElementById("book");
+
+// bookRef.addEventListener("click", appDate)

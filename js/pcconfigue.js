@@ -10,12 +10,18 @@
 //     }
 
 // }
-
-
 let arr=[];
 
+ const handleremove=(i)=>{
+    arr.splice(i,1);
+    console.log(arr);
+    handlesubmit();
+
+    return false;
+}
+
 let proval=0;
-let ramval=0;
+let ramval=0;   
 let memval=0;
 let graval=0; 
 
@@ -24,8 +30,6 @@ const handlesubmit = () =>{
     let ram=document.getElementsByName("ram");
     let memory=document.getElementsByName("memo");
     let graphics=document.getElementsByName("grap");
-
-
 
     // console.log(processor[0].value, processor[0].checked);
 
@@ -62,19 +66,20 @@ const handlesubmit = () =>{
         memone:memval,
         graphicsone:graval,
     };
+
     
-    // console.log(Configu);
-
-
     arr.push(Configu);
+    let print='';
+    arr.map((v,i)=>{
+        print= print +`<tr><td>${v.pro}</td> <td>${v.ramone}</td>
+          <td>${v.memone}</td> <td>${v.graphicsone}</td> </tr>`
+        print=print + `<button onclick=handleremove(${i})>remove</button>`
+    })
     console.log(arr);
 
-
-//    document.getElementById("cost").innerHTML=arr.map((v)=>Configu.v);
-
-    // document.getElementById("cost").innerHTML=arr.map((v)=>{
-    //     v.Configu;
-    // });
+    document.getElementById("cost").innerHTML=print;
+   
+    // console.log(arr);
    return false;
 
     // console.log(graval);
@@ -88,4 +93,4 @@ const handlesubmit = () =>{
     // document.getElementById("type").innerHTML=res;
 
     // console.log(proval);
-}
+};

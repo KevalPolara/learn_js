@@ -7,7 +7,7 @@
 </head>
 <body>
 
-    <form action="" onsubmit="return handlesubmit()">
+    <form action="">
         <span>Processor:-</span>
         <input type="radio" name="pro" value="i3">i3   
         <input type="radio" name="pro" value="i5">i5
@@ -33,17 +33,14 @@
         <input type="radio" name="grap" value="No">No
 
         <br><br>
-
-        <input type="submit" value="calculate cost">
+        <input type="submit" value="calculate cost" onclick="return handlesubmit()">
         <br><br>
         <!-- <span>Cost :</span> -->
-        <span id="cost"></span>
+        <p id="cost"></p>
         <br><br>
 
         <!-- <span>Type:</span> -->
-        <span id="type"></span>
-
-
+        <!-- <span id="type"></span> -->
         
     </form>
 

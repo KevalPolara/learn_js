@@ -27,60 +27,28 @@
             <input type="date" name="date" id="date">
             <br>
         </div>
-        <input type="submit" value="Book Appointment" onclick="return handleclick()">
+        <input type="submit" value="Book Appointment" id="book" onclick="return handleclick()">
 
     </form>
+    <div id="treat" style="display: none">
+        <table border="1">
 
-    <table border="1">
+            <thead>
+                <tr">
+                    <th>Treatment</th>
+                    <th>Seating</th>
+                    <th>Costing</th>
+                    <th>Appointment Date <br>(Per Week)</th>
+                    <th>Payable <br>Amount/Seating </th>
+                    <th>Delete</th>
+                    </tr>
+            </thead>
 
-        <thead>
-        
-            <tr id="treat" style="display: none;">
-                <th>Treatment</th>
-                <th>Seating</th>
-                <th>Costing</th>
-                <th>Appointment Date <br>(Per Week)</th>
-                <th>Payable <br>Amount/Seating </th>
-            </tr>
-        </thead>
+            <tbody id="tbody">
 
-        <tbody>
-            <p id="table"></p>
-           
-        <tr id="fill" style="display: none;">
-            <td>Fillings</td>
-            <td>2</td>
-            <td>1500</td>
-            <td id="firone-date"></td>
-            <td>750</td>
-        </tr>
-
-        <tr id="root" style="display: none;">
-            <td>Root Cananl Treatment</td>
-            <td>4</td>
-            <td>2500</td>
-            <td id="firtwo-date"></td>
-            <td>625</td>
-        </tr>
-
-        <tr id="rct" style="display: none;">
-            <td>Rct + Cover</td>
-            <td>6</td>
-            <td>12000</td>
-            <td id="firthree-date"></td>
-            <td>200</td>
-        </tr>
-
-
-        <tr id="brace" style="display: none;">
-            <td>Brace/invisalign</td>
-            <td>12</td>
-            <td>35000</td>
-            <td id="firfour-date"></td>
-            <td>291.66</td>
-        </tr>
-    </tbody>
-    </table>
+            </tbody>
+        </table>
+    </div>
 
     <script src="js/dental_system.js"></script>
 

@@ -1,0 +1,103 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row{
+    padding-left: 2.0rem;
+    /* margin-top: 2.0rem; */
+}
+
+.col-5{
+    border: 2px solid red;
+    /* border-radius: 10%; */
+}
+
+input{
+    width: 90%;
+    margin-bottom: 1.0rem;
+   border: 1px solid green;
+}
+
+.budget{
+    margin-top: 2.0rem;
+}
+
+button{
+    /* padding-top: 1.0rem; */
+    margin-bottom: 1.0rem;
+    border: red;
+    outline: none;
+}
+
+.demo{
+    margin-top: 5.0rem;
+    /* position: absolute; */
+}
+
+.fa-solid{
+    font-size: 3.0rem;
+    color: #183153;
+    display: block;
+    margin-right: 2.0rem;
+}
+
+span{
+    font-size: 2.0rem;
+    display: inline-block;
+    margin-top: 1.0rem;
+    color: blue;
+}
+
+h3{
+    padding-left: 1.0rem;
+    text-align: center;
+}
+
+#error{
+    color: red;
+    font-size: 1.2rem;
+    display: block;
+    position: relative;
+    bottom: 2.0rem;
+}
+
+#error1{
+    color: red;
+    font-size: 1.2rem;
+    display: block;
+    position: relative;
+    /* bottom: 1.0rem; */
+
+}
+
+#error2{
+    color: red;
+    font-size: 1.2rem;
+    display: block;
+    position: relative;
+    /* bottom: 1.0rem; */
+
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.fa-trash{
+    font-size: 1.0rem;
+}
+
+.fa-pen-to-square{
+    font-size: 1.0rem;
+}
+
+.demofive{
+    display: inline-block;
+}
+
+
+

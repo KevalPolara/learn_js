@@ -1,47 +1,78 @@
-let arr=[];
-let updateindex=null;
+let arr = [];
+let updateindex = null;
 
-const handleadd=()=>{
- let todo=document.getElementById("todo").value;
+const handleadd = () => {
+  let todo = document.getElementById("todo").value;
 
- if(updateindex!==null){
-    arr[updateindex]=todo;
- }else{
-    arr.push(todo);
- }
- updateindex=null;
+  let localdata = JSON.parse(localStorage.getItem("todo"));
 
- showdisplay();
-//  console.log(todo);
+  if (updateindex !== null) {
+    localdata[updateindex] = todo;
+    localStorage.setItem("todo", JSON.stringify(localdata));
+  } else {
+    if (localdata !== null) {
+      localdata.push(todo);
+      localStorage.setItem("todo", JSON.stringify(localdata));
+    } else {
+      localStorage.setItem("todo", JSON.stringify([todo]));
+    }
+    // arr.push(todo);
+  }
+  updateindex = null;
 
- return false;
-}
+  // console.log(localdata);
 
-const handleremove =(i)=>{
+  showdisplay();
 
-    arr.splice(i,1);
-    showdisplay();
+  //  let localdata=JSON.parse(localStorage.getItem("todo"));
+  //  console.log(todo);
 
-    // console.log(arr);
+  return false;
+};
 
-    return false;
-}
+const handleremove = i => {
+  let localdata = JSON.parse(localStorage.getItem("todo"));
+  localdata.splice(i, 1);
 
-const handleedit=(i)=>{
-   document.getElementById("todo").value=arr[i];
+  localStorage.setItem("todo", JSON.stringify(localdata));
 
-   updateindex=i;
+  showdisplay();
 
-   return false;
-}
-const showdisplay=()=>{
-   let print='';
+  // localStorage.removeItem("todo");
+  //   localStorage.setItem("todo", JSON.stringify(localdata));
 
-   arr.map((v,i)=>{
-      print=print+`<li>${v}`
-      print=print+ `<button onclick=handleremove(${i})>remove</button>`
-      print=print+ `<button onclick=handleedit(${i})>edit</button></li>`
-   })
+  // console.log(arr);
 
-   document.getElementById("demo").innerHTML=print;
-}
+  return false;
+};
+
+const handleedit = i => {
+  let localdata = JSON.parse(localStorage.getItem("todo"));
+  document.getElementById("todo").value = localdata[i];
+
+  // localStorage.setItem("todo", JSON.stringify(localdata));
+  updateindex = i;
+  return false;
+};
+const showdisplay = () => {
+  let localdata = JSON.parse(localStorage.getItem("todo"));
+
+  if (localdata) {
+    let print = "";
+
+    localdata.map((v, i) => {
+      print = print + `<li>${v}`;
+      print = print + `<button onclick=handleremove(${i})>remove</button>`;
+      print = print + `<button onclick=handleedit(${i})>edit</button></li>`;
+    });
+
+    document.getElementById("demo").innerHTML = print;
+  }
+
+  return false;
+};
+
+window.onload = showdisplay();
+
+// localStorage.setItem("todo", JSON.stringify(localdata));
+//   localdata = JSON.parse(localStorage.getItem("todo"));
